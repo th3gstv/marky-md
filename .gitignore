@@ -1,3 +1,10 @@
+# Ambiente virtual
+env
+venv
+
+# Variáveis de ambiente
+.env
+
 # Compiled class file
 *.class
 
