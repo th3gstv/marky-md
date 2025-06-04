@@ -2,8 +2,8 @@
 Esse arquivo serve como um marcador do progresso do marky-md. Constantemente atualizado durante o desenvolvimento do projeto.
 
 ## Milestones
-- [ ] Leitura de arquivos
+- [x] Leitura de arquivos
 - [ ] Suporte à negrito
 - [ ] Suporte à itálico
-- [ ] Suporte à headers
+- [x] Suporte à headers
 - [ ] Modo interativo
