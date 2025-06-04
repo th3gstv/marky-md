@@ -1,7 +1,6 @@
 import sys
 from re import search
 
-print(sys.argv)
 ##arquivo = open("nome do arquivo", "modo")
 ## modos -> "r" (read) |
     ##arquivo = open("README.md", "r")
@@ -16,7 +15,6 @@ arquivo = open(sys.argv[1], "r")
 linhas = arquivo.readlines()
 for item in linhas:
     if item.find("#") == 0:
-        print(f"\033[31m{item}\033[0m")
-
+        print(f"\033[31m{item}\033[0m", end= "")
     else:
-        print(item, end= " ")
+        print(item, end= "")
