@@ -1,11 +1,7 @@
-import sys
-from re import search
+#!/usr/bin/env	python3
 
-##arquivo = open("nome do arquivo", "modo")
-## modos -> "r" (read) |
-    ##arquivo = open("README.md", "r")
-    ##linhas = arquivo.readlines()
-    ##print(linhas)
+import sys
+
 if len(sys.argv) < 2:
     print(f"Usage: {sys.argv[0]} FILENAME")
     exit()
