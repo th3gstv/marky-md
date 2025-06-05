@@ -9,22 +9,14 @@ def header(linha):
 	return False
 		
 def bold(linha):
-	not_bold = 0
-	bold_start = linha.find("**")
-	bold_end = linha.find("**", bold_start+2)
-	next_bold = linha.find("**", bold_end+2)
-	if bold_start == -1 or bold_end == -1:
+	if linha.find("**") == -1:
 		return False
-	while True:
-		print(linha[not_bold:bold_start], end="")
-		print("\033[1m" + linha[bold_start:bold_end+2] + "\033[0m", end="")
-		if next_bold == -1:
-			print(linha[bold_end+2:], end="")
-			break
-		not_bold = bold_end+2
-		bold_start = next_bold
-		bold_end = linha.find("**", bold_start+2)
-		next_bold = linha.find("**", bold_end+2)
+	sections = linha.split("**")
+	sections_len = len(sections)
+	for i in range(0, sections_len, 2):
+		print(sections[i], end="")
+		if i+1 < sections_len:
+			print("\033[1m" + sections[i+1] + "\033[0m", end="")
 	return True
 
 if len(sys.argv) < 2:
