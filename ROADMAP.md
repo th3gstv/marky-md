@@ -3,7 +3,7 @@ Esse arquivo serve como um marcador do progresso do marky-md. Constantemente atu
 
 ## Milestones
 - [x] Leitura de arquivos
-- [ ] Suporte à negrito
-- [ ] Suporte à itálico
+- [x] Suporte à negrito
+- [x] Suporte à itálico
 - [x] Suporte à headers
 - [ ] Modo interativo
