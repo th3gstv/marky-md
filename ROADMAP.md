@@ -6,4 +6,4 @@ Esse arquivo serve como um marcador do progresso do marky-md. Constantemente atu
 - [x] Suporte à negrito
 - [x] Suporte à itálico
 - [x] Suporte à headers
-- [ ] Modo interativo
+- [x] Modo interativo

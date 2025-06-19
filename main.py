@@ -30,8 +30,21 @@ def italic(linha):
             linha += "\033[3m" + sections[i+1] + "\033[0m"
     return linha
 
+def interative():
+    print("Digite o seu texto com markdown simples. Digite 0 para sair")
+    while True:
+        linha = input(">> ")
+        if linha.lower() == "0":
+            break
+        linha = bold(linha)
+        linha = italic(linha)
+        linha = header(linha)
+        print(linha)
+
 if len(sys.argv) < 2:
-    print(f"Usage: {sys.argv[0]} FILENAME")
+    #print(f"Usage: {sys.argv[0]} FILENAME")
+    print("Rodando no modo interativo")
+    interative()
     exit()
 
 sys.argv.pop(0)
